@@ -1,0 +1,50 @@
+<div class="contact-container">
+    <h2>Contactez-nous</h2>
+  
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <!-- Nom -->
+      <div>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" formControlName="name">
+        <div *ngIf="contactForm.get('name')?.invalid && (contactForm.get('name')?.dirty || contactForm.get('name')?.touched)" class="error">
+          <small *ngIf="contactForm.get('name')?.hasError('required')">Le nom est requis.</small>
+          <small *ngIf="contactForm.get('name')?.hasError('minlength')">Le nom doit contenir au moins 3 caractères.</small>
+        </div>
+      </div>
+  
+      <!-- Email -->
+      <div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" formControlName="email">
+        <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)" class="error">
+          <small *ngIf="contactForm.get('email')?.hasError('required')">L'email est requis.</small>
+          <small *ngIf="contactForm.get('email')?.hasError('email')">L'email n'est pas valide.</small>
+        </div>
+      </div>
+  
+      <!-- Sujet -->
+      <div>
+        <label for="subject">Sujet :</label>
+        <input type="text" id="subject" formControlName="subject">
+        <div *ngIf="contactForm.get('subject')?.invalid && (contactForm.get('subject')?.dirty || contactForm.get('subject')?.touched)" class="error">
+          <small *ngIf="contactForm.get('subject')?.hasError('required')">Le sujet est requis.</small>
+          <small *ngIf="contactForm.get('subject')?.hasError('minlength')">Le sujet doit contenir au moins 5 caractères.</small>
+        </div>
+      </div>
+  
+      <!-- Message -->
+      <div>
+        <label for="message">Message :</label>
+        <textarea id="message" formControlName="message" rows="5"></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)" class="error">
+          <small *ngIf="contactForm.get('message')?.hasError('required')">Le message est requis.</small>
+          <small *ngIf="contactForm.get('message')?.hasError('minlength')">Le message doit contenir au moins 10 caractères.</small>
+        </div>
+      </div>
+  
+      <!-- Bouton de soumission -->
+      <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+    </form>
+  </div>
+  
+  

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #F9D0A3;
+  background-color: #F9D0A3 !important;
 }
 
 h1 {
@@ -24,6 +24,11 @@ h2 {
   border: 5px solid #FDD90B;
   padding: 10px;
   text-align: center;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
 }
 
 .product img {

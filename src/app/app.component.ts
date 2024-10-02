@@ -7,13 +7,23 @@ import { AccueilComponent } from "./accueil/accueil.component";
 import { AboutComponent } from "./about/about.component";
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { FilterByName } from './filter-by-name.pipe';
+import { ContactComponent } from './contact/contact.component';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, AccueilComponent, AboutComponent, SortByPricePipe, FormsModule, FilterByName],
+  imports: [
+  RouterOutlet,
+  HeaderComponent, 
+  FooterComponent, 
+  AccueilComponent, 
+  AboutComponent, 
+  SortByPricePipe, 
+  FormsModule, 
+  FilterByName, 
+  ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
