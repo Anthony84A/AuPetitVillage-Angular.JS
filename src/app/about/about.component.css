@@ -2,5 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F9D0A3 ;
+}
+
+h1 {
+    margin: 50px;
+    color: #DA001E;
+    font-size: 64px;
+}
+
+
+img {
+    margin: 25px;
+}
+
+p {
+    margin: 50px;
+    font-size: 16px;
+    line-height: 1.6; 
 }

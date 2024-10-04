@@ -1,0 +1,25 @@
+#detail_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2 {
+    color: #DA001E;
+    margin: 10px;
+    font-size: 32px;
+}
+
+img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+p {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 1.6;   
+}

@@ -2,21 +2,53 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #F9D0A3 !important;
 }
 
 h1 {
   color: #DA001E;
+  margin: 50px;
+  font-size: 64px;
+}
+
+p {
+  margin: 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  
 }
 
 h2 {
   color: #DA001E;
+  margin: 50px;
+  font-size: 45px;
+  text-align: center;
 }
+
+h3 {
+  color: #DA001E;
+}
+
+input[type="text"] {
+  width: 400px;
+  height: 40px; 
+  padding: 10px; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 30px;
+}
+
+button {
+  margin: 5px;
+}
+
 
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 16px;
+  margin: 10px;
 }
 
 .product {

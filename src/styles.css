@@ -7,9 +7,22 @@
 }
 
 
-body {
-    font-family: 'Comfortaa', sans-serif;
+@font-face {
+    font-family: 'BobblebodyNeue';
+    src: url('./assets/font/BubbleboddyNeue-Bold\ Trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #F9D0A3;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'BobblebodyNeue';
+}
 
 

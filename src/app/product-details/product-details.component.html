@@ -1,7 +1,7 @@
-<div *ngIf="product">
+<div id="detail_product" *ngIf="product">
     <h2>{{ product.name }}</h2>
     <img [src]="product.imageUrl" alt="{{ product.name }}">
     <p>Prix : {{ product.price }} €</p>
     <p>Description : {{ product.description || 'Aucune description disponible' }}</p>
-  </div>
+</div>
   
